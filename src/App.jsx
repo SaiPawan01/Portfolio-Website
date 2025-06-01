@@ -22,8 +22,6 @@ function App() {
       <Skills />
       <Contact />
 
-
-      <hr />
       <Footer />
     </>
   )
