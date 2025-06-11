@@ -6,13 +6,27 @@ import React from 'react'
 import SectionWraper from './SectionWraper'
 import ProjectCard from './ProjectCard'
 
-function Projects() {
+// assets
+import { projectsLandingPage } from '../assets/files/projects'
+import { projects } from '../assets/files/projects'
+
+
+// isLanding prop if set true only three projects will be displayed to fit landing page
+// if not set it's by defalut false and render all projects
+function Projects({isLandingPage = false}) {
+
+  let containerStyles = 'md:flex gap-3 text-[#ABB2BF]';
+
+  if(isLandingPage == false){
+    containerStyles = 'md:grid grid-cols-3 gap-3 text-[#ABB2BF]';
+  }
+
   return (
     <SectionWraper title="projects">
-        <div className='md:flex gap-3 text-[#ABB2BF]'>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+        <div className={containerStyles}>
+          {/* conditional rendering of three projects or all porjects */}
+            {isLandingPage ? projectsLandingPage.map((project,index) => <ProjectCard key={index} project={project}/>) :
+          projects.map((project,index) => <ProjectCard key={index} project={project}/>)}
         </div>
     </SectionWraper>
   )

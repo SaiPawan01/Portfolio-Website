@@ -1,27 +1,21 @@
 import React from 'react'
 
-
+// components
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Quote from './components/Quote'
-import Projects from './components/projects'
-import Experience from './components/Experience'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+// pages
+import HomePage from './pages/HomePage'
+import ProjectsPage from './pages/ProjectsPage'
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Quote />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Contact />
+      
+      <HomePage />
 
+      {/* <ProjectsPage /> */}
       <Footer />
     </>
   )
