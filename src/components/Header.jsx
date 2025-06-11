@@ -10,7 +10,7 @@ function Header() {
         <a href="#" className='flex gap-3'><img className='w-4' src={Icons.rectangleIcon} alt="name logo" /><p className='text-xl font-bold hidden md:flex text-white'>SaiPawan</p></a>
         <ul className='hidden md:flex gap-5 text-xl text-[#ABB2BF]'>
             <li><span className='text-[#C778DD]'>#</span>home</li>
-            <li><span className='text-[#C778DD]'>#</span>Projects</li>
+            <li><span className='text-[#C778DD]'>#</span>projects</li>
             <li><span className='text-[#C778DD]'>#</span>about-me</li>
             <li><span className='text-[#C778DD]'>#</span>contacts</li>
         </ul>

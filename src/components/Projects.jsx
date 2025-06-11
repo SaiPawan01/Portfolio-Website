@@ -13,7 +13,7 @@ import { projects } from '../assets/files/projects'
 
 // isLanding prop if set true only three projects will be displayed to fit landing page
 // if not set it's by defalut false and render all projects
-function Projects({isLandingPage = false}) {
+function Projects({isLandingPage = false,viewbtn = false}) {
 
   let containerStyles = 'md:flex gap-3 text-[#ABB2BF]';
 
@@ -22,8 +22,8 @@ function Projects({isLandingPage = false}) {
   }
 
   return (
-    <SectionWraper title="projects">
-        <div className={containerStyles}>
+    <SectionWraper title="projects" viewbtn={viewbtn}>
+        <div className={containerStyles} >
           {/* conditional rendering of three projects or all porjects */}
             {isLandingPage ? projectsLandingPage.map((project,index) => <ProjectCard key={index} project={project}/>) :
           projects.map((project,index) => <ProjectCard key={index} project={project}/>)}

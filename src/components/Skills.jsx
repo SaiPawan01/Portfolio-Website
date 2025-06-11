@@ -2,12 +2,12 @@ import React from 'react'
 
 
 // assets
-import { skillSet } from '../assets/files/skillSet'
+import { skillSet } from '../assets/files/skillSet.js'
 
 
 // components
-import SectionWraper from './SectionWraper'
-import SkillsTable from './SkillsTable'
+import SectionWraper from './SectionWraper.jsx'
+import SkillsTable from './SkillsTable.jsx'
 
 function Skills() {
   return (

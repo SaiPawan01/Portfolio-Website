@@ -3,6 +3,7 @@ import developerImg from '../images/developer-img.png'
 import infosysLogo from '../images/infosys-logo.webp'
 import kdlLogo from '../images/kdl-logo.png'
 import sampleImg from '../images/sample.png'
+import AboutMeImg from '../images/about-me-img.png'
 
 
 
@@ -22,7 +23,8 @@ export const Images = {
     developerImg,
     infosysLogo,
     kdlLogo,
-    sampleImg
+    sampleImg,
+    AboutMeImg
 }
 
 export const Icons = {
@@ -34,3 +36,10 @@ export const Icons = {
     
 }
 
+export const Facts = [
+    'I like C++ more than Java',
+    'I do solve DSA problems',
+    'I am still in school',
+    "I like food",
+    "I began my journey to become a hacker"
+]
