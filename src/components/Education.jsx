@@ -15,7 +15,7 @@ function Education() {
                     <tr className='text-white'>
                         <th className='border p-4'>Qualification</th>
                         <th className='border p-4'>College</th>
-                        <th className='border p-4'>Percentage/CGPA</th>
+                        <th className='border p-4'>Score</th>
                     </tr>
                 </thead>
                 <tbody>

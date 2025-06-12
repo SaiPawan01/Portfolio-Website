@@ -19,9 +19,9 @@ function Footer() {
           <div className='flex flex-col gap-2'>
             <h4 className='text-xl font-medium text-white'>Media</h4>
             <div className='flex gap-2'>
-              <a href="#"><img src={Icons.githubIcon} alt="github-logo" /></a>
-              <a href="#"><img src={Icons.linkedinIcon} alt="linkedin-logo" /></a>
-              <a href="#"><img src={Icons.discordIcon} alt="discord-logo" /></a>
+              <a href="https://github.com/SaiPawan01" target='_blank'><img src={Icons.githubIcon} alt="github-logo" className='hover:scale-110 w-8'  /></a>
+              <a href="https://www.linkedin.com/in/pavan-sai-porapu/" target='_blank'><img src={Icons.linkedinIcon} alt="linkedin-logo" className='hover:scale-110 w-8' /></a>
+              <a href="#" target='_blank'><img src={Icons.discordIcon} alt="discord-logo" className='hover:scale-110 w-8' /></a>
             </div>
           </div>
         </div>

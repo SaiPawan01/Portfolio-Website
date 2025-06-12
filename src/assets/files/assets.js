@@ -13,6 +13,8 @@ import emailIcon from '../icons/Email.svg'
 import githubIcon from '../icons/Github.svg'
 import linkedinIcon from '../icons/Linkedin.svg'
 import rectangleIcon from '../icons/rectangleIcon.svg'
+import openSidebarIcon from '../icons/openSidebarIcon.svg'
+import closeSidebarIcon from '../icons/closeSidebarIcon.svg'
 
 
 
@@ -32,8 +34,9 @@ export const Icons = {
     emailIcon,
     githubIcon,
     linkedinIcon,
-    rectangleIcon
-    
+    rectangleIcon,
+    closeSidebarIcon,
+    openSidebarIcon,
 }
 
 export const Facts = [

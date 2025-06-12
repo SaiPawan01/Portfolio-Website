@@ -1,24 +1,33 @@
 import React from 'react'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-// components
-import Header from './components/Header'
-import Footer from './components/Footer'
 
 // pages
 import HomePage from './pages/HomePage'
 import ProjectsPage from './pages/ProjectsPage'
 import AboutMePage from './pages/AboutMePage'
+import RootPage from './pages/RootPage'
+import CertificationsPage from './pages/CertificationsPage'
+
+
+// routes
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element : <RootPage />,
+    children :[
+      {path : '/', element : <HomePage />},
+      {path : '/about', element : <AboutMePage />},
+      {path : '/projects', element : <ProjectsPage />},
+      {path : '/certifications', element : <CertificationsPage />}
+    ]
+  },
+  
+])
 
 function App() {
   return (
-    <>
-      <Header />
-      
-      {/* <HomePage /> */}
-      <AboutMePage />
-      {/* <ProjectsPage /> */}
-      <Footer />
-    </>
+    <RouterProvider router={router} />
   )
 }
 

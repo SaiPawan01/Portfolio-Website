@@ -8,12 +8,11 @@ import ProjectCard from './ProjectCard'
 
 // assets
 import { projectsLandingPage } from '../assets/files/projects'
-import { projects } from '../assets/files/projects'
 
 
 // isLanding prop if set true only three projects will be displayed to fit landing page
 // if not set it's by defalut false and render all projects
-function Projects({isLandingPage = false,viewbtn = false}) {
+function Projects({projects, title, isLandingPage = false, viewbtn = false, path=''}) {
 
   let containerStyles = 'md:flex gap-3 text-[#ABB2BF]';
 
@@ -21,14 +20,15 @@ function Projects({isLandingPage = false,viewbtn = false}) {
     containerStyles = 'md:grid grid-cols-3 gap-3 text-[#ABB2BF]';
   }
 
+
   return (
-    <SectionWraper title="projects" viewbtn={viewbtn}>
+    <SectionWraper title={title} viewbtn={viewbtn} path={path}>
         <div className={containerStyles} >
           {/* conditional rendering of three projects or all porjects */}
             {isLandingPage ? projectsLandingPage.map((project,index) => <ProjectCard key={index} project={project}/>) :
           projects.map((project,index) => <ProjectCard key={index} project={project}/>)}
         </div>
-    </SectionWraper>
+    </SectionWraper>    
   )
 }
 

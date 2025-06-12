@@ -10,13 +10,16 @@ import AboutMe from '../components/AboutMe'
 import Contact from '../components/Contact'
 
 
+// assets
+import {projectsLandingPage} from '../assets/files/projects.js'
+
 function HomePage() {
   return (
     <>
       <Hero />
       <Quote />
       <Experience />
-      <Projects isLandingPage={true} viewBtn={true} />
+      <Projects isLandingPage={true} viewbtn={true} projects={projectsLandingPage} path='/projects' title='projects' />
       <Skills />
       <AboutMe isLandingPage={true} />
       <Contact />
