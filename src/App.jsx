@@ -8,6 +8,9 @@ import ProjectsPage from './pages/ProjectsPage'
 import AboutMePage from './pages/AboutMePage'
 import RootPage from './pages/RootPage'
 import CertificationsPage from './pages/CertificationsPage'
+import ErrorComponent from './components/ErrorComponent'
+
+
 
 
 // routes
@@ -15,6 +18,7 @@ const router = createBrowserRouter([
   {
     path:'/',
     element : <RootPage />,
+    errorElement : <ErrorComponent />,
     children :[
       {path : '/', element : <HomePage />},
       {path : '/about', element : <AboutMePage />},
